@@ -1,15 +1,10 @@
 # stone-vipers-rpg
 
 # Ideas
-- atributes: attack, health, XP, level
-- 1 weapon
-- Each boss kill increases XP, each level increases attack and health
-- weapon damage = 2
-  
-- Boss stats: attack 5, health 20, weapon damage 5
+- Boss stats: attack 5, health 20, weapon damage 2
 - Each boss kill gains 2 XP
-
-
+-
+- Attributes: Attack, Health, XP, Level
 | XP | Level    | Kills Required    |Attack    |Health    |
 | :---:   | :---: | :---: | :---: |:---: |
 | 0 | 0 | 0 |10 |10 |
