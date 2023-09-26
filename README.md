@@ -3,8 +3,9 @@
 # Ideas
 - Boss stats: attack 5, health 20, weapon damage 2
 - Each boss kill gains 2 XP
--
+
 - Attributes: Attack, Health, XP, Level
+  
 | XP | Level    | Kills Required    |Attack    |Health    |
 | :---:   | :---: | :---: | :---: |:---: |
 | 0 | 0 | 0 |10 |10 |
