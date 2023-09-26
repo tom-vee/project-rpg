@@ -1,0 +1,19 @@
+.box {
+    width: 200px;
+    border: 6px solid black;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+  }
+
+.column {
+    float: left;
+    width: 50%;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
