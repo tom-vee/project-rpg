@@ -1,4 +1,4 @@
-# stone-vipers-rpg
+# project-rpg
 
 # Ideas
 - Boss stats: attack 5, health 20, weapon damage 2
