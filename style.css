@@ -1,45 +1,74 @@
 .row {
-    width: 100%;
+    /*width: auto;*/
     text-align: center;
     border: 1px solid #cfd8dc;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
+/*
 .box {
-    width: 250px;
+    width: auto;
     border-radius: 10px;
     border: 1px solid #cfd8dc;
     padding: 10px;
     margin: 20px;
     text-align: center;
-    justify-content: center;
     margin: 1 auto;
-  margin-left: auto;
-  margin-right: auto;
+   /* margin-left: auto;
+    margin-right: auto;
+}*/
+
+.e1 {
+    background-color: rgba(89, 95, 89, 0.576);
 }
 
-.sections {
-    width: 150px;
-    border: 1px solid #cfd8dc;
-    padding: 10px;
-    margin: 20px;
-    text-align: center;
-    justify-content: center;
-    margin: 1 auto;
-  margin-left: auto;
-  margin-right: auto;
-  }
+.e2 {
+    background-color: rgba(255, 166, 0, 0.584);
+}
+
+.e3 {
+    background-color: rgba(255, 0, 0, 0.614);
+}
+
 
 nav {
     display: flex; /* 1 */
     justify-content: space-between; /* 2 */
     padding: 1rem 2rem; /* 3 */
-    background: rgba(233, 213, 147, 0.601); /* 4 */
+    background: rgb(245, 216, 129); /* 4 */
+    border: 1px solid #cfd8dc;
   }
 
   h3 {
     font-size: 20px;
     margin: 5px;
   }
+
+  body {
+    font-family: Helvetica, sans-serif;
+  }
+
+ 
+
+.first {
+    width: 50%;
+    display: inline-block;
+    background-color: green;
+}
+
+.second {
+    width: 50%;
+    display: inline-block;
+    background-color: blue;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .first,
+    .second {
+        width: 70%;
+    }
+}
+
   

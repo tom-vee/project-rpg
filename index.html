@@ -2,45 +2,74 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
     </head>
 
     <body>
+    
         <nav>
             <h3>Stone Vipers RPG</h3>
         </nav>
-        <div class="row">
-            <div class="column">
-                <h2>Hero Name..</h2>  
+        <div class="first row">
+                <h2>King Warrior</h2>  
             <img src="warrior-picture.png" width="100px" height="100px">
-        </div>
-            <div class="column">
+        
+     
             <p>Level: 0<br>
-                XP: 0 <br>
-                Health: 0  </p>
+                XP: 0 <br><br>
+                Health: 10 <br>
+                <progress id="health" value="8" max="10"></progress> <br>
+                +1 Health Restore Time: 15 
+                <p>
+                Attack: 6<br>
+                Defence: 10
+                 </p>
                 <p>Coins: 0<br>
                     Weapon Equiped: Stick (+1 Damage)</p>
-            </div>
+       
         </div>
-        <div class="row">   
+
+        <div class="second row">   
          <h2>Enemies:</h2>   
-            <div class="box">
-                Fight Small Vipers
+         <h5>Click an enemy box to fight</h5>
+            <div class="box e1">
+                Fight Small Vipers<br>
+                Easy<br>
+                <p>
+                Rewards: 2xp, coins, basic weapons
+                </p>
                 <p>Attack: 5<br>
-                    Health: 20
+                    Defence: 20<br>
+                    Health: 20<br>
+                    <progress id="health" value="20" max="20"></progress>
                 </p>
             </div>
-            <div class="box">
-                Fight Warrior Vipers
+                  <div class="box e2">
+                    
+                Fight Warrior Vipers<br>
+                Medium<br>
+                <p>
+                    Rewards: 4xp, coins, weapons
+                    </p>
                 <p>Attack: 8<br>
-                    Health: 25
+                    Defence: 20<br>
+                    Health: 25<br>
+                    <progress id="health" value="25" max="25"></progress>
                 </p>
             </div>
-            <div class="box">
-                Fight The Stone Viper
+            <div class="box e3">
+                Fight The Stone Viper<br>
+                Hard<br>
+                <p>
+                    Rewards: 10xp, coins, epic weapons
+                    </p>
                 <p>Attack: 10<br>
-                    Health: 30
+                    Defence: 20<br>
+                    Health: 30<br>
+                    <progress id="health" value="30" max="30"></progress>
                 </p>
-     </div>
+     </div> 
             </div>
         </div>
 
