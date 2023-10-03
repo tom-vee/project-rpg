@@ -3,73 +3,52 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
-        <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
-    </head>
+      
 
+    <nav>
+        <h3>Stone Vipers RPG</h3>
+    </nav>
     <body>
-    
-        <nav>
-            <h3>Stone Vipers RPG</h3>
-        </nav>
-        <div class="first row">
+
+
+        <div class="first">
                 <h2>King Warrior</h2>  
+                <div class="box">
             <img src="warrior-picture.png" width="100px" height="100px">
         
      
             <p>Level: 0<br>
-                XP: 0 <br><br>
+                XP: 0 
+                <p>
+                    Attack: 6<br>
+                    Defence: 10<br>
                 Health: 10 <br>
                 <progress id="health" value="8" max="10"></progress> <br>
                 +1 Health Restore Time: 15 
-                <p>
-                Attack: 6<br>
-                Defence: 10
-                 </p>
-                <p>Coins: 0<br>
-                    Weapon Equiped: Stick (+1 Damage)</p>
+               
+            </div>
        
         </div>
 
-        <div class="second row">   
-         <h2>Enemies:</h2>   
-         <h5>Click an enemy box to fight</h5>
-            <div class="box e1">
-                Fight Small Vipers<br>
-                Easy<br>
+        <div class="second">   
+         <h2>Enemies:</h2>  
+         
+            <div class="box">
+               <b>The Stone Viper</b>
+                <p><img src="stone-viper-picture.png" width="100px" height="100px">
+            </p>
                 <p>
-                Rewards: 2xp, coins, basic weapons
-                </p>
-                <p>Attack: 5<br>
-                    Defence: 20<br>
-                    Health: 20<br>
-                    <progress id="health" value="20" max="20"></progress>
-                </p>
-            </div>
-                  <div class="box e2">
-                    
-                Fight Warrior Vipers<br>
-                Medium<br>
-                <p>
-                    Rewards: 4xp, coins, weapons
-                    </p>
-                <p>Attack: 8<br>
-                    Defence: 20<br>
-                    Health: 25<br>
-                    <progress id="health" value="25" max="25"></progress>
-                </p>
-            </div>
-            <div class="box e3">
-                Fight The Stone Viper<br>
-                Hard<br>
-                <p>
-                    Rewards: 10xp, coins, epic weapons
+                    Rewards: 10XP
                     </p>
                 <p>Attack: 10<br>
                     Defence: 20<br>
                     Health: 30<br>
                     <progress id="health" value="30" max="30"></progress>
-                </p>
-     </div> 
+                <br>
+                +1 Health Restore Time: 5 
+                <p>
+                <button type="button">Fight!</button>
+   
             </div>
         </div>
 

@@ -1,33 +1,11 @@
-.row {
-    /*width: auto;*/
-    text-align: center;
-    border: 1px solid #cfd8dc;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-/*
 .box {
-    width: auto;
+    width: 80%;
     border-radius: 10px;
     border: 1px solid #cfd8dc;
     padding: 10px;
     margin: 20px;
     text-align: center;
-    margin: 1 auto;
-   /* margin-left: auto;
-    margin-right: auto;
-}*/
-
-.e1 {
-    background-color: rgba(89, 95, 89, 0.576);
-}
-
-.e2 {
-    background-color: rgba(255, 166, 0, 0.584);
-}
-
-.e3 {
-    background-color: rgba(255, 0, 0, 0.614);
+    background-color: rgb(246, 238, 238);
 }
 
 
@@ -36,7 +14,6 @@ nav {
     justify-content: space-between; /* 2 */
     padding: 1rem 2rem; /* 3 */
     background: rgb(245, 216, 129); /* 4 */
-    border: 1px solid #cfd8dc;
   }
 
   h3 {
@@ -48,27 +25,24 @@ nav {
     font-family: Helvetica, sans-serif;
   }
 
- 
+.div {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+
+
+}
 
 .first {
-    width: 50%;
-    display: inline-block;
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.567);
 }
 
 .second {
-    width: 50%;
-    display: inline-block;
-    background-color: blue;
+    background-color: rgba(164, 1, 1, 0.695);
 }
 
 
-@media screen and (max-width: 500px) {
 
-    .first,
-    .second {
-        width: 70%;
-    }
-}
 
   
