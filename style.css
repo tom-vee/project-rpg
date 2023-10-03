@@ -1,19 +1,27 @@
+body {
+    background-color: rgba(0, 128, 0, 0.662);
+}
+
+button {
+    height: 20px;
+}
+
 .box {
-    width: 80%;
     border-radius: 10px;
     border: 1px solid #cfd8dc;
+    display: inline-table;
+    width: 42%;
     padding: 10px;
     margin: 20px;
     text-align: center;
     background-color: rgb(246, 238, 238);
 }
 
-
 nav {
     display: flex; /* 1 */
     justify-content: space-between; /* 2 */
     padding: 1rem 2rem; /* 3 */
-    background: rgb(245, 216, 129); /* 4 */
+    background: rgba(245, 216, 129, 0.682); /* 4 */
   }
 
   h3 {
@@ -25,22 +33,7 @@ nav {
     font-family: Helvetica, sans-serif;
   }
 
-.div {
-    text-align: center;
-    padding: 10px;
-    margin: 20px;
-    display: inline-block;
 
-
-}
-
-.first {
-    background-color: rgba(0, 128, 0, 0.567);
-}
-
-.second {
-    background-color: rgba(164, 1, 1, 0.695);
-}
 
 
 
