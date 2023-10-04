@@ -10,23 +10,34 @@ button {
     border-radius: 10px;
     border: 1px solid #cfd8dc;
     display: inline-table;
-    width: 42%;
+    width: 200px;
     padding: 10px;
     margin: 20px;
     text-align: center;
     background-color: rgb(246, 238, 238);
 }
 
+.infobox {
+    border-radius: 10px;
+    border: 1px solid #cfd8dc;
+    width: 91%;
+    padding: 10px;
+    margin: 20px;
+    text-align: left;
+    background-color: rgb(246, 238, 238);
+}
+
 nav {
-    display: flex; /* 1 */
-    justify-content: space-between; /* 2 */
-    padding: 1rem 2rem; /* 3 */
-    background: rgba(245, 216, 129, 0.682); /* 4 */
+    display: flex; 
+    margin: 5px; 
+    padding-left: 20px;
+
   }
 
   h3 {
     font-size: 20px;
-    margin: 5px;
+    color: black;
+
   }
 
   body {

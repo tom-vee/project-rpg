@@ -3,30 +3,28 @@
     <head>
         <link rel="stylesheet" href="style.css">
     </head>
-      
-        <body>
-    <!-- <nav>
-        <h3>Stone Vipers RPG</h3>
-    </nav> -->
+    <script type="text/javascript" src="index.js"></script>
+     <body>
+   
         <div class="box">
             <b>Warrior</b>
-            <p><img src="warrior-picture.png" width="100px" height="100px">
+            <p><img src="images/warrior-picture.png" width="100px" height="100px">
             <p>Level: 0<br>
                 XP: 0 
                 <p>
                     Attack: 6<br>
                     Defence: 10<br>
-                Health: 10 <br>
-                <progress id="health" value="8" max="10"></progress> <br>
+                    Health: <span id="healthText">10</span> <br>
+                <progress id="healthText" value="healthText" max="healthBar">10</progress> <br>
                 <p>
-                <button type="button">Heal</button>
+                <button onclick="heroHeal()">Heal</button>
         </div>
        
       
          
             <div class="box">
-               <b>The Stone Viper</b>
-                <p><img src="stone-viper-picture.png" width="100px" height="100px">
+               <b>Stone Viper</b>
+                <p><img src="images/stone-viper-picture.png" width="100px" height="100px">
             </p>
                 <p>
                     Rewards:<br> 10XP
@@ -38,11 +36,11 @@
                 <br>
                 
                 <p>
-                <button type="button">Fight!</button>
+                <button onclick="fight()">Fight!</button>
    
             </div>
       
-
+            
     </body>
-
+   
 </html>
