@@ -1,4 +1,7 @@
 # project-rpg
+Project RPG is a game that I created after learning about programming through Javascript. It's built with vanilla Javascript, HTML and CSS.
+
+<img width="813" alt="image" src="https://github.com/tom-vee/project-rpg/assets/146029631/23ea0dde-022d-4711-bd80-88ec85f4ffa2">
 
 # Ideas
 - Boss stats: attack 5, health 20, weapon damage 2
