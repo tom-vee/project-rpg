@@ -48,7 +48,7 @@ function levelUp() {
         document.getElementById("defenceText").innerText = defence;
         maxHealth += 10;
         break;
-    case 20:
+    case 30:
         level += 1;
         alert("Congrats! You're level 2.\n+2 Attack\n+2 Defence\n+10 Health");
         document.getElementById("levelText").innerText = level;
@@ -58,7 +58,7 @@ function levelUp() {
         document.getElementById("defenceText").innerText = defence;
         maxHealth += 10;
         break;
-    case 30:
+    case 60:
         level += 1;
         alert("Congrats! You're level 3.\n+2 Attack\n+2 Defence\n+10 Health");
         document.getElementById("levelText").innerText = level;
@@ -74,11 +74,11 @@ function levelUp() {
 function viperDeath() {
     if (viperHealth <=0){
         alert("Viper Defeated! - 10XP gained\nYou looted 10 coins and 3 Heal Potions!");
-        viperHealth += 30;
+        viperHealth = 30;
         document.getElementById("viperHealthText").innerText = viperHealth;
-        healPotions += 3;
+        healPotions += Math.floor(Math.random()*3);
         document.getElementById("healPotionText").innerText = healPotions;
-        coin += 10;
+        coin += Math.floor(Math.random()*10);
         document.getElementById("coinText").innerText = coin;
         xpUp();
     }

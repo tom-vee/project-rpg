@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(0, 128, 0, 0.662);
+    background: linear-gradient(155deg, rgba(101,152,90,1) 0%, rgba(110,193,111,1) 28%, rgba(86,199,222,1) 100%);
 }
 
 button {
