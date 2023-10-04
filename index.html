@@ -9,13 +9,13 @@
         <div class="box">
             <b>Warrior</b>
             <p><img src="images/warrior-picture.png" width="100px" height="100px">
-            <p>Level: 0<br>
-                XP: 0 
+            <p>Level: <span id="levelText">0</span><br>
+                XP: <span id="xpText">0</span> 
                 <p>
-                    Attack: 6<br>
-                    Defence: 10<br>
+                    Attack: <span id="attackText">6</span><br>
+                    Defence: <span id="defenceText">10</span><br>
                     Health: <span id="healthText">10</span> <br>
-                <progress id="healthText" value="healthText" max="healthBar">10</progress> <br>
+                <br>
                 <p>
                 <button onclick="heroHeal()">Heal</button>
         </div>
@@ -31,12 +31,12 @@
                     </p>
                 <p>Attack: 10<br>
                     Defence: 20<br>
-                    Health: 30<br>
-                    <progress id="health" value="30" max="30"></progress>
+                    Health: <span id="viperHealthText">30</span> <br>
+                    
                 <br>
                 
                 <p>
-                <button onclick="fight()">Fight!</button>
+                <button onclick="heroDamage(); viperDamage()">Fight!</button>
    
             </div>
       
