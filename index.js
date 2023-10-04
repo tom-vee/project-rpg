@@ -5,22 +5,31 @@ let attack = 6;
 let defence = 10;
 let health = 10;
 let maxHealth = 10;
-let weaponDamage = 2;
 
 // Viper Stats
 let viperAttack = 10;
 let viperDefence = 20;
-let viperHealth = 30;
+let viperHealth = 20;
+
+//Inventory
+let healPotions = 3;
+let weaponDamage = 2;
+let coin = 0;
 
 function heroHeal() {
-    if (health === maxHealth){
-        alert("You're at max health")
-    } else {
-        health += 1;
-        document.getElementById("healthText").innerText = health;
+    if ( healPotions > 0) {
+        if (health === maxHealth){
+            alert("You're at max health")
+        } else {
+            health += 2;
+            document.getElementById("healthText").innerText = health;
+            healPotions -= 1;
+            document.getElementById("healPotionText").innerText = healPotions;
+        }} else {
+            alert("No health potions left")
+        }
     }
-}
-
+    
 function xpUp() {
     xp += 10;
     document.getElementById("xpText").innerText= xp;
@@ -64,8 +73,13 @@ function levelUp() {
 
 function viperDeath() {
     if (viperHealth <=0){
-        alert("Viper Defeated! - 10XP gained");
+        alert("Viper Defeated! - 10XP gained\nYou looted 10 coins and 3 Heal Potions!");
         viperHealth += 30;
+        document.getElementById("viperHealthText").innerText = viperHealth;
+        healPotions += 3;
+        document.getElementById("healPotionText").innerText = healPotions;
+        coin += 10;
+        document.getElementById("coinText").innerText = coin;
         xpUp();
     }
 }

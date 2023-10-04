@@ -12,34 +12,52 @@
             <p>Level: <span id="levelText">0</span><br>
                 XP: <span id="xpText">0</span> 
                 <p>
+                    Bronze Dagger (+2 Attack)<br>
+                Heal Potion x <span id="healPotionText">3</span><br>
+                Coins: <span id="coinText">0</span>
+                <p>
                     Attack: <span id="attackText">6</span><br>
                     Defence: <span id="defenceText">10</span><br>
                     Health: <span id="healthText">10</span> <br>
-                <br>
+                
                 <p>
                 <button onclick="heroHeal()">Heal</button>
-        </div>
-       
-      
+               
+            </div>
          
             <div class="box">
                <b>Stone Viper</b>
                 <p><img src="images/stone-viper-picture.png" width="100px" height="100px">
-            </p>
+      
                 <p>
-                    Rewards:<br> 10XP
-                    </p>
-                <p>Attack: 10<br>
+                    Rewards:<br> 
+                    10XP<br> 
+                    Coins<br>
+                    Heal Potions<br>
+                    <br>
+                    <br>
+                    Attack: 10<br>
                     Defence: 20<br>
-                    Health: <span id="viperHealthText">30</span> <br>
-                    
-                <br>
-                
+                    Health: <span id="viperHealthText">20</span> <br>
                 <p>
                 <button onclick="heroDamage(); viperDamage()">Fight!</button>
    
             </div>
-      
+
+            <div class="box">
+                <b>Store:</b>
+                <p>
+                Heal Potion x 1 <br>
+                Cost: 2 coins<br>
+                <button onclick="buyPotion()">Buy</button>
+                <p>
+                Rune Sword<br>
+                Cost: 10 coins<br>
+                <button onclick="buyPotion()">Buy</button>
+
+            </div>
+            
+            
             
     </body>
    
