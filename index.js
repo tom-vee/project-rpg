@@ -93,7 +93,7 @@ function viperDeath() {
 }
 function dead() {
 if (health < 1){
-    alert("Game Over\nYou're dead")
+    alert("Game Over\nYou're dead");
 }
 }
 /*
