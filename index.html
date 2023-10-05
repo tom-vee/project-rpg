@@ -12,7 +12,7 @@
             <p>Level: <span id="levelText">0</span><br>
                 XP: <span id="xpText">0</span> 
                 <p>
-                    Bronze Dagger (+2 Attack)<br>
+                <span id="weaponText">Dagger</span> <i>(+</span><span id="weaponDamageText">2</span> Attack)</i><br>
                 Heal Potion x <span id="healPotionText">3</span><br>
                 Coins: <span id="coinText">0</span>
                 <p>
@@ -26,7 +26,7 @@
             </div>
          
             <div class="box">
-               <b>Stone Viper</b>
+               <b>Snakes</b>
                 <p><img src="images/stone-viper-picture.png" width="100px" height="100px">
       
                 <p>
@@ -49,11 +49,15 @@
                 <p>
                 Heal Potion x 1 <br>
                 Cost: 2 coins<br>
-                <button onclick="buyPotion()">Buy</button>
+                <button onclick="buyPotion()"><span id="healPotionStockText">5 in stock - Buy</span></button>
                 <p>
-                Rune Sword<br>
+                Sword<br>
                 Cost: 10 coins<br>
-                <button onclick="buyPotion()">Buy</button>
+                <button onclick="buySword()"><span id="swordStockText">1 in stock - Buy</span></button>
+                <p>
+                Epic Sword<br>
+                Cost: 100 coins<br>
+                <button onclick="buyEpicSword()"><span id="epicSwordStockText">1 in stock - Buy</span></button>
 
             </div>
             

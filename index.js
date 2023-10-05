@@ -6,6 +6,9 @@ let defence = 10;
 let health = 10;
 let maxHealth = 10;
 
+// Weapon Stats
+let weaponDamage = 2;
+
 // Viper Stats
 let viperAttack = 10;
 let viperDefence = 20;
@@ -13,8 +16,13 @@ let viperHealth = 20;
 
 //Inventory
 let healPotions = 3;
-let weaponDamage = 2;
-let coin = 0;
+let coin = 10;
+let weapon = 'Dagger';
+
+//Store
+let epicSwordStockText = '1 in stock - Buy';
+let swordStockText = '1 in stock - Buy'
+let healPotionStockText = '5 in stock - Buy'
 
 function heroHeal() {
     if ( healPotions > 0) {
@@ -85,7 +93,7 @@ function viperDeath() {
 }
 function dead() {
 if (health < 1){
-    alert("You're dead")
+    alert("Game Over\nYou're dead")
 }
 }
 /*
@@ -93,8 +101,8 @@ if (health < 1){
 - Percentage to hit: (hit * attack)/100
 */
 function viperDamage() {
-    var hit = attack / weaponDamage;
-    var percHit = (hit * attack * weaponDamage);
+    var hit = Math.floor(attack / weaponDamage);
+    var percHit = Math.floor(hit * attack * weaponDamage);
     var per = Math.floor(Math.random() * 101);
     //console.log(hit);
     //console.log(percHit);
@@ -127,3 +135,38 @@ function heroDamage() {
     health += 0;
 }
 }
+
+function buySword() {
+    if (coin >= 10){
+        weapon = 'Sword';
+        document.getElementById("weaponText").innerText = weapon;
+        weaponDamage = 10;
+        document.getElementById("weaponDamageText").innerText = weaponDamage;
+        coin -= 10;
+    } else {
+        alert('You do not have enough money!\nGet out of the store!')
+    }
+}
+
+function buyEpicSword() {
+    if (coin >= 100){
+        weapon = 'Epic Sword';
+        document.getElementById("weaponText").innerText = weapon;
+        weaponDamage = 25;
+        document.getElementById("weaponDamageText").innerText = weaponDamage;
+        coin -= 100;
+    } else {
+        alert('You do not have enough money!\nGet out of the store!')
+    }
+}
+
+function buyPotion() {
+    if (coin >= 2){
+        healPotions += 1;
+        document.getElementById("healPotionText").innerText = healPotions;
+        coin -= 2;
+    } else {
+        alert('You do not have enough money!\nGet out of the store!')
+    }
+}
+
