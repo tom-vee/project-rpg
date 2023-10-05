@@ -12,9 +12,9 @@
             <p>Level: <span id="levelText">0</span><br>
                 XP: <span id="xpText">0</span> 
                 <p>
-                <span id="weaponText">Dagger</span> <i>(+</span><span id="weaponDamageText">2</span> Attack)</i><br>
+                <span id="weaponText">Dagger</span> <i>(+</span><span id="weaponDamageText">0</span> Damage)</i><br>
                 Heal Potion x <span id="healPotionText">3</span><br>
-                Coins: <span id="coinText">0</span>
+                Coins: <span id="coinText">2</span>
                 <p>
                     Attack: <span id="attackText">6</span><br>
                     Defence: <span id="defenceText">10</span><br>
@@ -49,15 +49,18 @@
                 <p>
                 Heal Potion x 1 <br>
                 Cost: 2 coins<br>
-                <button onclick="buyPotion()"><span id="healPotionStockText">5 in stock - Buy</span></button>
+                <span id="healPotionStockText">5</span> in stock<br>
+                <button onclick="buyPotion()">Buy</span></button>
                 <p>
-                Sword<br>
-                Cost: 10 coins<br>
-                <button onclick="buySword()"><span id="swordStockText">1 in stock - Buy</span></button>
-                <p>
-                Epic Sword<br>
+                Sword <i>(+5 Damage)</i><br>
                 Cost: 100 coins<br>
-                <button onclick="buyEpicSword()"><span id="epicSwordStockText">1 in stock - Buy</span></button>
+                <span id="swordStockText">1</span> in stock<br>
+                <button onclick="buySword()">Buy</button>
+                <p>
+                Epic Sword <i>(+15 Damage)</i><br>
+                Cost: 250 coins<br>
+                <span id="epicSwordStockText">1</span> in stock<br>
+                <button onclick="buyEpicSword()">Buy</button>
 
             </div>
             
